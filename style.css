@@ -1,0 +1,221 @@
+body{
+    background-color: #f4f4f4;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: 'Playfair Display', serif;
+}
+a{
+    font-weight: bold;
+}
+
+/*Navbar*/
+
+.nav-link{
+    margin-left: 5vh;
+}
+
+.profile{
+    border-radius: 50%;
+    border: 8px solid #ffd7ba;
+    border-bottom: 13px solid #fff;
+    box-shadow: 10px 10px 10px #999;
+}
+.logo{
+    border: 8px solid #fff;
+}
+
+/*Home*/
+/*Rotator*/
+
+.rotator {
+    display: block;
+    animation: spin_words 6s infinite;
+    font-size: 50px;
+}
+.words {
+    overflow: hidden;
+}
+.wrapper {
+    /*box-sizing: content-box; 
+    background-color: #ffffff;*/
+    height: 80px;
+    /*padding: 50px 30px; 
+    display: flex;
+    border-radius: 8px; 
+    box-shadow: 0 20px 25px rgb(0 0 0 / 20%); */
+}
+@keyframes spin_words{
+  10%{
+    transform: translateY(-112%);
+  }
+  25%{
+     transform: translateY(-100%); 
+  }
+  35%{
+     transform: translateY(-212%); 
+  }
+  50%{
+    transform: translateY(-200%);
+  }
+  60%{
+     transform: translateY(-312%); 
+  }
+  75%{
+    transform: translateY(-300%);
+  }
+  85%{
+    transform: translateY(-412%);
+  }
+  100%{
+    transform: translateY(-400%);
+  }
+
+}
+.perf{
+    background-color: #ffd7ba;
+
+}
+
+
+
+
+/*About*/
+.title_about{
+    text-align: center;
+    font-weight: bold;
+}
+
+.font_3{
+    background: linear-gradient( to bottom, transparent 50%, #ffd7ba 50% );
+    background-image: #ffd7ba;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.btn{
+    margin-top: 3vh;
+}
+.btn:hover{
+    background-color: #f9dcc4;
+    color: black;
+    border:  1px solid black;   
+}
+.image{
+    border-radius: 0.7rem;
+    float: left;
+    margin-right: 5vh;
+
+}
+
+.button_dwnd, .btn{
+    display: inline-block;
+    background-color: black;
+    color: #f9dcc4;
+    padding: .75rem 2.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: .3s;
+    text-decoration: none;
+}
+.button_dwnd:hover{
+    background-color: #f9dcc4;
+    color: black;
+    border:  1px solid black;
+}
+
+
+/*Skills*/
+.title_skills{
+    text-align: center;
+    font-weight: bold;
+}
+
+.accordion-item{
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.accordion-button {
+    background-color: #f9dcc4;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #ffd7ba;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button{
+    display: inline-block;
+    background-color: black;
+    color: #f9dcc4;
+    padding: .75rem 2.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: .3s;
+    text-decoration: none;
+}
+.accordion-button:hover{
+    background-color: #f9dcc4;
+    color: black;
+    border:  1px solid black;
+}
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-3 {width: 95%; height: 10px; background-color: black;}
+.bar-2 {width: 90%; height: 10px; background-color: black;}
+.bar-1 {width: 75%; height: 10px; background-color: black;}
+.bar-4 {width: 90%; height: 10px; background-color: black;}
+.bar-5 {width: 90%; height: 10px; background-color: black;}
+.bar-6 {width: 70%; height: 10px; background-color: black;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+
+
+
